@@ -35,9 +35,7 @@ function ProfileFooter() {
             </Col>
             <Col>
               <div className="footer-btn ">
-                <a href="#" className="btn white-button sm-left">
-                  download CV
-                </a>
+                <span className="btn white-button sm-left">download CV</span>
               </div>
             </Col>
           </Row>
