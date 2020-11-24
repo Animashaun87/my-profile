@@ -35,14 +35,7 @@ function Portfolio(props) {
                   style={{ width: "100%" }}
                 />
                 <div>
-                  <a
-                    href="#"
-                    rel="noopener no-referrer"
-                    // target="_blank"
-                    className="mask"
-                  >
-                    mask
-                  </a>
+                  <span className="mask">mask</span>
                 </div>
               </div>
             </Col>
