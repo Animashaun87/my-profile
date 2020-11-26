@@ -82,7 +82,7 @@
 @media (min-width: 280px) {
   .logo {
     position: absolute;
-    left: -18px !important;
+    left: -24px !important;
     top: -24px;
   }
 }
