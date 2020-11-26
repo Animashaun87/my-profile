@@ -43,7 +43,7 @@ function Header(props) {
           }}
         >
           <Col lg={8} style={{ marginBottom: "15px" }}>
-            <h2>
+            <h2 className="logo">
               <Link to="/" style={styles.headerLogo}>
                 ABIDEMI
               </Link>
