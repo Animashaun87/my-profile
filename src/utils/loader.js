@@ -15,7 +15,7 @@ const Loader = () => {
     >
       <Icon
         type="sync"
-        style={{ fontSize: 70, color: colors.lightBrown }}
+        style={{ fontSize: 45, color: colors.lightBrown }}
         spin
       />
     </div>
