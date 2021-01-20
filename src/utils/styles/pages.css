@@ -221,3 +221,14 @@
 .image-background img {
   justify-self: center;
 }
+
+.contact {
+  display: grid;
+  justify-content: center;
+}
+
+.info {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr;
+}

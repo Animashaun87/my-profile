@@ -32,7 +32,7 @@ const styles = {
     color: colors.lightBrown,
     fontSize: "30px",
     fontWeight: 400,
-    paddingLeft: "40px",
+    paddingLeft: "28px",
   },
 };
 

@@ -187,6 +187,7 @@ const styles = {
   headerLogo: {
     color: colors.lightBrown,
     fontWeight: "700",
+    paddingLeft: "6px",
   },
   letsTalk: {
     backgroundColor: colors.lightBrown,
