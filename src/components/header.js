@@ -143,25 +143,37 @@ function Header(props) {
             }}
           >
             <Link to="/">
-              <div style={styles.mobileMenu}>
+              <div
+                style={styles.mobileMenu}
+                onClick={() => setMenuOpen(!menuOpen)}
+              >
                 <Icon type="home" style={styles.mobileMenuIcon} />
                 Home
               </div>
             </Link>
             <Link to="/about">
-              <div style={styles.mobileMenu}>
+              <div
+                style={styles.mobileMenu}
+                onClick={() => setMenuOpen(!menuOpen)}
+              >
                 <ProfileOutlined style={{ paddingRight: "10px" }} />
                 About
               </div>
             </Link>
             <Link to="/portfolio">
-              <div style={styles.mobileMenu}>
+              <div
+                style={styles.mobileMenu}
+                onClick={() => setMenuOpen(!menuOpen)}
+              >
                 <Icon type="" />
                 Portfolio
               </div>
             </Link>
             <Link to="/contact">
-              <div style={styles.mobileMenu}>
+              <div
+                style={styles.mobileMenu}
+                onClick={() => setMenuOpen(!menuOpen)}
+              >
                 <ContactsOutlined style={{ paddingRight: "10px" }} />
                 Contact
               </div>

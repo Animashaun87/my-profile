@@ -229,6 +229,9 @@
 
 .info {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 2fr;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: 1fr; */
+  grid-gap: 20px;
+  padding: 0 5% 20px 5%;
+  justify-content: center;
 }

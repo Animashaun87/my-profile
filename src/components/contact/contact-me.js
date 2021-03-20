@@ -1,31 +1,39 @@
 import React from "react";
 import colors from "../../utils/colors";
 import "../../utils/styles/pages.css";
+import { Icon } from "antd";
 
 function ContactMe() {
   return (
     <>
       <div className="contact">
-        <h1 style={{ color: colors.lighterBrown }}>Contact Me</h1>
+        <h2 style={styles.contactMe}>Contact Me</h2>
         <h3>Have a project you'll like me to work on?</h3>
-        {/* <h4>Send me a mail at animashaunbidemi07@gmail.com</h4> */}
       </div>
+
       <div className="info">
-        <div>
-          <h5>Phone</h5>
-          <p>
-            <i>08165519459</i>
-          </p>
+        <div style={styles.card}>
+          <h4>
+            <Icon type="phone" style={{ paddingRight: "5px" }} />
+            Phone Number
+          </h4>
+          <p style={{ fontWeight: "bold" }}>08165519459</p>
         </div>
-        <div>
-          <h5>Email</h5>
-          <i>animashaunbidemi07@gmail.com</i>
+
+        <div style={styles.card}>
+          <h4>
+            <Icon type="mail" style={{ paddingRight: "5px" }} />
+            Email
+          </h4>
+          <p style={{ fontWeight: "bold" }}>animashaunbidemi07@gmail.com</p>
         </div>
-        <div>
-          <h5>Address</h5>
-          <p>
-            <i>Hajj camp Gwagwalada Abuja</i>
-          </p>
+
+        <div style={styles.card}>
+          <h4>
+            <Icon type="contact" style={{ paddingRight: "5px" }} />
+            Address
+          </h4>
+          <p style={{ fontWeight: "bold" }}>Hajj camp Gwagwalada Abuja</p>
         </div>
       </div>
     </>
@@ -33,11 +41,21 @@ function ContactMe() {
 }
 
 const styles = {
+  contactMe: {
+    color: colors.lighterBrown,
+    marginBottom: "0px",
+  },
   card: {
     backgroundColor: colors.white,
     height: "240px",
-    margin: "0px 24px 32px 24px",
-    transition: "0.4s",
+    border: "1px solid grey",
+    boxShadow: "2px 2px 2px 2px rgba(208, 208, 208, 0.3)",
+    borderRadius: "5px",
+    // width: "30%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
   },
   phone: {
     fontFamily: "sans-serif",

@@ -35,7 +35,7 @@ function ProfileFooter() {
             </Col>
             <Col>
               <div className="footer-btn ">
-                <span className="btn white-button sm-left">download CV</span>
+                {/* <span className="btn white-button sm-left">download CV</span> */}
               </div>
             </Col>
           </Row>
