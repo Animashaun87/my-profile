@@ -13,7 +13,7 @@ function Portfolios() {
     <>
       <PageBanner title={"My Portfolio"} />
       <Expertise portBg={"about-area"} wrapper={"wrapper"} />
-      <Portfolio title={"My Portfolios"} />
+      <Portfolio />
       <ScrollToTop />
     </>
   );

@@ -33,7 +33,10 @@ function ContactMe() {
             <Icon type="contact" style={{ paddingRight: "5px" }} />
             Address
           </h4>
-          <p style={{ fontWeight: "bold" }}>Hajj camp Gwagwalada Abuja</p>
+          <p style={{ fontWeight: "bold" }}>
+            No 20, Passo road after Uniabuja Teaching Hospital, Gwagwalada,
+            Abuja.
+          </p>
         </div>
       </div>
     </>
