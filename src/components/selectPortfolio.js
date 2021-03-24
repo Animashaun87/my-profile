@@ -2,16 +2,18 @@ import React, { useEffect, useState } from "react";
 import { Row, Col } from "antd";
 import colors from "../utils/colors";
 import galleries from "../utils/data";
+import Loader from "../utils/loader";
 
 const HomePortfolio = () => {
   const [showGalleries, setShowGalleries] = useState([]);
+  const [loading, setLoading] = useState(false);
 
-  const filteredGallery = () => {
-    return galleries.filter((gallery) => gallery.showOnHome === true);
-  };
+  const filteredGallery = () =>
+    galleries.filter(({ showOnHome }) => showOnHome === true);
 
   useEffect(() => {
     setShowGalleries(filteredGallery);
+    setLoading(false);
   }, []);
 
   return (
@@ -29,34 +31,38 @@ const HomePortfolio = () => {
         </Row>
 
         <Row type="flex" justify="space-around">
-          {showGalleries.map((gallery) => (
-            <Col
-              lg={10}
-              md={10}
-              sm={10}
-              style={{ marginBottom: "20px" }}
-              key={gallery.id}
-            >
-              <div className="view grow overlay">
-                <img
-                  src={gallery.image}
-                  alt="Porfolio"
-                  className="portfolio-img"
-                  height="476"
-                  style={{ width: "100%" }}
-                />
-                <div>
-                  <a
-                    href={gallery.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span className="mask">{gallery.name}</span>
-                  </a>
+          {loading ? (
+            <Loader />
+          ) : (
+            showGalleries.map((gallery) => (
+              <Col
+                lg={10}
+                md={10}
+                sm={10}
+                style={{ marginBottom: "20px" }}
+                key={gallery.id}
+              >
+                <div className="view grow overlay">
+                  <img
+                    src={gallery.image}
+                    alt="Porfolio"
+                    className="portfolio-img"
+                    height="476"
+                    style={{ width: "100%" }}
+                  />
+                  <div>
+                    <a
+                      href={gallery.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="mask">{gallery.name}</span>
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </Col>
-          ))}
+              </Col>
+            ))
+          )}
           {/*           
           <Col lg={10} md={10} sm={10}>
           <div className="view grow overlay">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Row, Col, Layout } from "antd";
 import colors from "../../utils/colors";
 import "../../utils/styles/pages.css";
@@ -6,7 +6,23 @@ import galleries from "../../utils/data";
 import Loader from "../../utils/loader";
 
 function Portfolio() {
+  const [portfolios, setPortfolios] = useState([]);
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    async function fetchGalleries() {
+      try {
+        const response = galleries;
+        setPortfolios(response);
+        setLoading(false);
+      } catch (error) {
+        setLoading(false);
+        return null;
+      }
+    }
+    fetchGalleries();
+  }, []);
+
   return (
     <>
       <Layout style={{ backgroundColor: colors.lightYellow }}>
@@ -26,7 +42,7 @@ function Portfolio() {
             {loading ? (
               <Loader />
             ) : (
-              galleries.map((gallery) => (
+              portfolios.map((gallery) => (
                 <Col
                   lg={10}
                   md={10}
@@ -37,7 +53,7 @@ function Portfolio() {
                   <div className="view grow overlay">
                     <img
                       src={gallery.image}
-                      alt={gallery.altName}
+                      alt="portfolio"
                       className="portfolio-img"
                       height="476"
                       style={{ width: "100%" }}
