@@ -223,14 +223,17 @@
 }
 
 .contact {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin: 18px 0 18px 0;
 }
 
 .info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* grid-template-rows: 1fr; */
+  grid-template-rows: repeat(240px);
   grid-gap: 20px;
   padding: 0 5% 20px 5%;
   justify-content: center;

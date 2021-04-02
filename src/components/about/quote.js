@@ -10,20 +10,20 @@ const Quote = () => {
         <Carousel autoplay effect="fade" dots={false}>
           <div>
             <h3 style={styles.quoteName}>Steve Job</h3>
-            <div style={styles.text}>
+            <div style={styles.text} className="quote-text">
               Everyone should know how to program a computer, because it teaches
               you how to think.
             </div>
           </div>
           <div>
             <h3 style={styles.quoteName}>Brytahub</h3>
-            <div style={styles.text}>
+            <div style={styles.text} className="quote-text">
               Your future is created by what you do today, not tomorrow
             </div>
           </div>
           <div style={styles.quoteName}>
             <h3 style={styles.quoteName}>Ani Bid</h3>
-            <div style={styles.text}>
+            <div style={styles.text} className="quote-text">
               Every successful story has a painful beginning
             </div>
           </div>
@@ -38,7 +38,7 @@ const styles = {
     backgroundColor: colors.white,
   },
   text: {
-    fontSize: 24,
+    fontSize: "18px",
     fontStyle: "oblique",
     fontWeight: "500",
     color: colors.lighterBrown,
@@ -49,7 +49,8 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     color: colors.lighterBrown,
-    fontSize: "34px",
+    fontSize: "24px",
+    fontWeight: "bold",
   },
 };
 

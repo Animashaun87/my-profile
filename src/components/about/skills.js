@@ -12,11 +12,10 @@ function Skill() {
   return (
     <>
       <Layout style={styles.skillBg}>
-        <Row type="flex" justify="center">
+        <Row type="flex" justify="center" style={{ margin: "18px 0 18px 0" }}>
           <Col>
             <div>
               <h1 style={styles.titleCol}>Skills</h1>
-              <h3 style={styles.subTitle}>Tools that i use</h3>
             </div>
           </Col>
         </Row>
@@ -69,13 +68,9 @@ const styles = {
   },
   titleCol: {
     color: colors.lightBrown,
-    fontSize: "44px",
+    fontSize: "40px",
     fontWeight: "500",
     marginBottom: "0px",
-  },
-  subTitle: {
-    fontSize: "18px",
-    color: colors.lightBrown,
   },
 };
 

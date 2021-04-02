@@ -14,7 +14,10 @@ function ContactMe() {
       <div className="info">
         <div style={styles.card}>
           <h4>
-            <Icon type="phone" style={{ paddingRight: "5px" }} />
+            <Icon
+              type="phone"
+              style={{ paddingRight: "5px", transform: "rotate(120deg)" }}
+            />
             Phone Number
           </h4>
           <p style={{ fontWeight: "bold" }}>08165519459</p>
@@ -25,15 +28,17 @@ function ContactMe() {
             <Icon type="mail" style={{ paddingRight: "5px" }} />
             Email
           </h4>
-          <p style={{ fontWeight: "bold" }}>animashaunbidemi07@gmail.com</p>
+          <span style={{ fontWeight: "bold" }}>
+            animashaunbidemi07@gmail.com
+          </span>
         </div>
 
         <div style={styles.card}>
           <h4>
-            <Icon type="contact" style={{ paddingRight: "5px" }} />
+            <Icon type="map" style={{ paddingRight: "5px" }} />
             Address
           </h4>
-          <p style={{ fontWeight: "bold" }}>
+          <p style={{ fontWeight: "bold" }} className="contact-text">
             No 20, Passo road after Uniabuja Teaching Hospital, Gwagwalada,
             Abuja.
           </p>
@@ -54,7 +59,6 @@ const styles = {
     border: "1px solid grey",
     boxShadow: "2px 2px 2px 2px rgba(208, 208, 208, 0.3)",
     borderRadius: "5px",
-    // width: "30%",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",

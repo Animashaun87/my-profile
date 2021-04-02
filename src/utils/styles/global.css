@@ -101,6 +101,12 @@
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .change-text {
+    font-size: 14px !important;
+  }
+}
+
 /* End Of Header Media Query*/
 
 /* Banner Media Query */
@@ -417,6 +423,7 @@
   .portfolio-img {
     padding: 0px 20px 20px 20px;
     height: 354px;
+    object-fit: cover;
   }
 }
 @media (max-width: 568px) {
@@ -638,9 +645,39 @@
     min-height: 226px;
   }
 }
+
+@media (max-width: 576px) {
+  .quote-text {
+    text-align: center;
+  }
+}
 /*End Of About Media Query */
 
 /* Contact Media Query */
+@media (max-width: 576px) {
+  .info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 640px) {
+  .info {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 300px) {
+  .contact-text {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .contact-text {
+    text-align: center;
+  }
+}
+
 @media (max-width: 576px) {
   .contact-banner {
     min-height: 226px;

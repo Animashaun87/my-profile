@@ -100,7 +100,7 @@ function Header(props) {
             className="hide-mobile hide-ipad"
             style={{ marginBottom: "15px" }}
           >
-            <h4 style={styles.typicalText}>
+            <h4 style={styles.typicalText} className="change-text">
               <ChangeText />
             </h4>
           </Col>
@@ -220,7 +220,7 @@ const styles = {
     padding: "2px 2px 10px 2px",
   },
   typicalText: {
-    fontSize: 16,
+    fontSize: "16px",
     fontWeight: "700",
     color: colors.lightBrown,
     textTransform: "uppercase",
