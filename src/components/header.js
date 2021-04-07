@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Row, Col, Icon, Button } from "antd";
-import { ContactsOutlined, ProfileOutlined } from "@ant-design/icons";
+import {
+  ContactsOutlined,
+  ProfileOutlined,
+  ProjectOutlined,
+} from "@ant-design/icons";
 import colors from "../utils/colors";
 import "../utils/styles/button.css";
 import { Link } from "@reach/router";
@@ -165,7 +169,7 @@ function Header(props) {
                 style={styles.mobileMenu}
                 onClick={() => setMenuOpen(!menuOpen)}
               >
-                <Icon type="" />
+                <ProjectOutlined style={{ paddingRight: "10px" }} />
                 Portfolio
               </div>
             </Link>
