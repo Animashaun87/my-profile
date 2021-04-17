@@ -137,7 +137,7 @@ function Header({ menuOpen, setMenuOpen, toggleMenu, path }) {
               position: "absolute",
               zIndex: 999,
               top: "84px",
-              borderRadius: "0 25px 0 0",
+              borderRadius: "0 0 25px 0",
               marginRight: "10%",
               transition: "all 0.4s ease-in",
             }}
