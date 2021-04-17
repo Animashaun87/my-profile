@@ -132,7 +132,6 @@ function Header({ menuOpen, setMenuOpen, toggleMenu, path }) {
             className="show-mobile show-ipad"
             style={{
               width: "90%",
-              // height: "220px",
               backgroundColor: colors.lightBrown,
               position: "absolute",
               zIndex: 999,
