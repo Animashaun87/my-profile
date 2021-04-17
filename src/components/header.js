@@ -13,8 +13,8 @@ import ScrollIndicator from "../utils/scroll-progess";
 import PropTypes from "prop-types";
 import ChangeText from "./animationText";
 
-function Header(props) {
-  const [menuOpen, setMenuOpen] = useState(false);
+function Header({ menuOpen, setMenuOpen, toggleMenu, path }) {
+  // const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
@@ -62,7 +62,7 @@ function Header(props) {
               <div style={{ paddingRight: "50px" }}>
                 <Link
                   to="/"
-                  className={`header ${props.path === "/" ? "active" : ""}`}
+                  className={`header ${path === "/" ? "active" : ""}`}
                 >
                   Home
                 </Link>
@@ -70,9 +70,7 @@ function Header(props) {
               <div style={{ paddingRight: 50 }}>
                 <Link
                   to="/about"
-                  className={`header ${
-                    props.path === "/about" ? "active" : ""
-                  }`}
+                  className={`header ${path === "/about" ? "active" : ""}`}
                 >
                   About
                 </Link>
@@ -80,9 +78,7 @@ function Header(props) {
               <div style={{ paddingRight: 50 }}>
                 <Link
                   to="/portfolio"
-                  className={`header ${
-                    props.path === "/portfolio" ? "active" : ""
-                  }`}
+                  className={`header ${path === "/portfolio" ? "active" : ""}`}
                 >
                   portfolio
                 </Link>
@@ -90,9 +86,7 @@ function Header(props) {
               <div>
                 <Link
                   to="/contact"
-                  className={`header ${
-                    props.path === "/contact" ? "active" : ""
-                  }`}
+                  className={`header ${path === "/contact" ? "active" : ""}`}
                 >
                   Contact
                 </Link>
@@ -111,7 +105,7 @@ function Header(props) {
 
           <Col className="show-mobile right right-ipad right-mobile show-ipad smaller-phone">
             {!menuOpen ? (
-              <Button type="link" onClick={() => setMenuOpen(!menuOpen)}>
+              <Button type="link" onClick={toggleMenu}>
                 <Icon
                   type="menu"
                   style={{
@@ -123,7 +117,7 @@ function Header(props) {
                 />
               </Button>
             ) : (
-              <Button type="link" onClick={() => setMenuOpen(!menuOpen)}>
+              <Button type="link" onClick={toggleMenu}>
                 <Icon
                   type="close"
                   style={{ color: colors.lightBrown, fontSize: "24px" }}
@@ -143,43 +137,49 @@ function Header(props) {
               position: "absolute",
               zIndex: 999,
               top: "84px",
+              borderRadius: "0 25px 0 0",
               marginRight: "10%",
+              transition: "all 0.4s ease-in",
             }}
           >
             <Link to="/">
               <div
                 style={styles.mobileMenu}
-                onClick={() => setMenuOpen(!menuOpen)}
+                onClick={toggleMenu}
+                className="mobile-menu-dropdown-item"
               >
                 <Icon type="home" style={styles.mobileMenuIcon} />
-                Home
+                <span> Home</span>
               </div>
             </Link>
             <Link to="/about">
               <div
                 style={styles.mobileMenu}
-                onClick={() => setMenuOpen(!menuOpen)}
+                onClick={toggleMenu}
+                className="mobile-menu-dropdown-item"
               >
                 <ProfileOutlined style={{ paddingRight: "10px" }} />
-                About
+                <span>About</span>
               </div>
             </Link>
             <Link to="/portfolio">
               <div
                 style={styles.mobileMenu}
-                onClick={() => setMenuOpen(!menuOpen)}
+                onClick={toggleMenu}
+                className="mobile-menu-dropdown-item"
               >
                 <ProjectOutlined style={{ paddingRight: "10px" }} />
-                Portfolio
+                <span>Portfolio</span>
               </div>
             </Link>
             <Link to="/contact">
               <div
                 style={styles.mobileMenu}
-                onClick={() => setMenuOpen(!menuOpen)}
+                onClick={toggleMenu}
+                className="mobile-menu-dropdown-item"
               >
                 <ContactsOutlined style={{ paddingRight: "10px" }} />
-                Contact
+                <span>Contact</span>
               </div>
             </Link>
           </div>

@@ -5,6 +5,8 @@ import Footer from "../components/footer";
 
 const Frontend = (props) => {
   const [path, setPath] = useState("/");
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const location = useLocation();
   useEffect(() => {
@@ -13,11 +15,25 @@ const Frontend = (props) => {
 
   return (
     <>
-      <Header path={path} />
-      {props.children}
-      <Footer />
+      <Header
+        path={path}
+        toggleMenu={toggleMenu}
+        menuOpen={menuOpen}
+        onClick={() => setMenuOpen(false)}
+      />
+      <div style={styles.inner} onClick={() => setMenuOpen(false)}>
+        {props.children}
+      </div>
+      <Footer onClick={() => setMenuOpen(false)} />
     </>
   );
+};
+
+const styles = {
+  inner: {
+    maxWidth: "100%",
+    margin: "0 auto",
+  },
 };
 
 export default Frontend;

@@ -220,6 +220,8 @@
 
 .image-background img {
   justify-self: center;
+  object-fit: contain;
+  object-position: center;
 }
 
 .contact {

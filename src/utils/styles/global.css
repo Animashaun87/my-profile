@@ -107,6 +107,18 @@
   }
 }
 
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .mobile-menu-dropdown-item {
+    transition: all 0.4s ease-in;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .mobile-menu-dropdown span {
+    transition: all 0.4s ease-in;
+  }
+}
+
 /* End Of Header Media Query*/
 
 /* Banner Media Query */

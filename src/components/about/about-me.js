@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row, Col, Layout } from "antd";
 import colors from "../../utils/colors";
 import Bidemi from "../../utils/images/Bidemi.jpg";
 import "../../utils/styles/pages.css";
 
 function AboutMe({ about }) {
+  const [menu, setMenu] = useState(false);
+  const toggle = () => {
+    setMenu(false);
+  };
+
   return (
     <>
       <Layout className="about-area" style={{ padding: "80px 0px" }}>
         <Row className="about-top">
           <Col lg={12} sm={24} xs={24}>
-            <div style={{ padding: "50px 0px 0px 20px" }}>
+            <div style={{ padding: "50px 0px 0px 20px" }} onClick={toggle}>
               <h2 style={styles.about} className="about-title">
                 About
               </h2>
@@ -53,7 +58,8 @@ const styles = {
   },
   img: {
     width: "100%",
-    paddingRight: 25,
+    paddingRight: "25px",
+    objectFit: "cover",
   },
 };
 export default AboutMe;
