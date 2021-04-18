@@ -1,6 +1,6 @@
 import React from "react";
-import { Icon } from "antd";
 import colors from "./colors";
+import { SyncOutlined } from "@ant-design/icons";
 
 const Loader = () => {
   return (
@@ -13,11 +13,7 @@ const Loader = () => {
         marginTop: "15%",
       }}
     >
-      <Icon
-        type="sync"
-        style={{ fontSize: 45, color: colors.lightBrown }}
-        spin
-      />
+      <SyncOutlined style={{ fontSize: 45, color: colors.lightBrown }} spin />
     </div>
   );
 };

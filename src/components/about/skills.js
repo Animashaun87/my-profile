@@ -53,12 +53,7 @@ function Skill() {
             <img src={Php} alt="Laravel" height="300" className="image-xs" />
           </div>
           <div className="image-background">
-            <img
-              src={Laravel}
-              alt="Laravel"
-              height="300"
-              className="image-xs"
-            />
+            <img src={Css3} alt="Laravel" height="300" className="image-xs" />
           </div>
         </div>
       </Layout>
