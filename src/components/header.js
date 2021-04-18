@@ -13,7 +13,7 @@ import ScrollIndicator from "../utils/scroll-progess";
 import PropTypes from "prop-types";
 import ChangeText from "./animationText";
 
-function Header({ menuOpen, setMenuOpen, toggleMenu, path }) {
+function Header({ menuOpen, toggleMenu, path }) {
   // const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -47,7 +47,7 @@ function Header({ menuOpen, setMenuOpen, toggleMenu, path }) {
           }}
         >
           <Col lg={8} style={{ marginBottom: "15px" }}>
-            <h2 className="logo">
+            <h2 className="logo" onClick={toggleMenu}>
               <Link to="/" style={styles.headerLogo}>
                 ABIDEMI
               </Link>
