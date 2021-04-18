@@ -5,6 +5,7 @@ import "antd/dist/antd.css";
 import "./utils/styles/global.css";
 import Loader from "./utils/loader";
 import ScrollToTop from "./components/ScrollToTop";
+import "aos/dist/aos.css";
 
 const retry = (fn, retriesLeft = 5, interval = 1000) => {
   return new Promise((resolve, reject) => {

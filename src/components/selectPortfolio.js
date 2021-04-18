@@ -5,6 +5,7 @@ import galleries from "../utils/data";
 import Loader from "../utils/loader";
 import { Link } from "@reach/router";
 import "../utils/styles/pages.css";
+import AOS from "aos";
 
 const HomePortfolio = () => {
   const [showGalleries, setShowGalleries] = useState([]);
@@ -16,6 +17,7 @@ const HomePortfolio = () => {
   useEffect(() => {
     setShowGalleries(filteredGallery);
     setLoading(false);
+    AOS.init({ duration: 5000 });
   }, []);
 
   return (
@@ -43,7 +45,12 @@ const HomePortfolio = () => {
               style={{ marginBottom: "20px" }}
               key={gallery.id}
             >
-              <div className="view grow overlay">
+              <div
+                className="view grow overlay"
+                data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
                 <img
                   src={gallery.image}
                   alt="Porfolio"
