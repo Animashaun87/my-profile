@@ -14,7 +14,6 @@ import PropTypes from "prop-types";
 import ChangeText from "./animationText";
 
 function Header({ menuOpen, toggleMenu, path }) {
-  // const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
@@ -47,7 +46,7 @@ function Header({ menuOpen, toggleMenu, path }) {
           }}
         >
           <Col lg={8} style={{ marginBottom: "15px" }}>
-            <h2 className="logo" onClick={toggleMenu}>
+            <h2 className="logo">
               <Link to="/" style={styles.headerLogo}>
                 ABIDEMI
               </Link>

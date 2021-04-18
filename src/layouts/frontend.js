@@ -24,7 +24,9 @@ const Frontend = (props) => {
       <div style={styles.inner} onClick={() => setMenuOpen(false)}>
         {props.children}
       </div>
-      <Footer onClick={() => setMenuOpen(false)} />
+      <div onClick={() => setMenuOpen(false)}>
+        <Footer />
+      </div>
     </>
   );
 };
