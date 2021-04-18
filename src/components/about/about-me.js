@@ -7,7 +7,7 @@ import "../../utils/styles/pages.css";
 function AboutMe({ about }) {
   return (
     <>
-      <Layout className="about-area" style={{ padding: "80px 0px" }}>
+      <Layout className="about-area" style={{ padding: "80px 0 0 0" }}>
         <Row className="about-top">
           <Col lg={12} sm={24} xs={24}>
             <div style={{ padding: "50px 0px 0px 20px" }}>

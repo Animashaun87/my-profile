@@ -147,8 +147,8 @@ function Header({ menuOpen, setMenuOpen, toggleMenu, path }) {
                 onClick={toggleMenu}
                 className="mobile-menu-dropdown-item"
               >
-                <Icon type="home" style={styles.mobileMenuIcon} />
-                <span> Home</span>
+                <Icon type="home" style={{ paddingRight: "10px" }} />
+                <span>Home</span>
               </div>
             </Link>
             <Link to="/about">
@@ -214,9 +214,6 @@ const styles = {
     fontSize: "18px",
     paddingLeft: "20px",
     color: colors.lightYellow,
-  },
-  mobileMenuIcon: {
-    paddingRight: "12px",
   },
   active: {
     borderBottom: "1px solid #670000",
