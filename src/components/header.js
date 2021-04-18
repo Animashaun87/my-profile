@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Row, Col, Icon, Button } from "antd";
+import { Row, Col, Button } from "antd";
 import {
+  CloseOutlined,
   ContactsOutlined,
   HomeFilled,
+  MenuOutlined,
   ProfileOutlined,
   ProjectOutlined,
 } from "@ant-design/icons";
@@ -106,8 +108,7 @@ function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
           <Col className="show-mobile right right-ipad right-mobile show-ipad smaller-phone">
             {!menuOpen ? (
               <Button type="link" onClick={toggleMenu}>
-                <Icon
-                  type="menu"
+                <MenuOutlined
                   style={{
                     color: colors.lightBrown,
                     fontSize: "28px",
@@ -118,8 +119,7 @@ function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
               </Button>
             ) : (
               <Button type="link" onClick={toggleMenu}>
-                <Icon
-                  type="close"
+                <CloseOutlined
                   style={{ color: colors.lightBrown, fontSize: "24px" }}
                 />
               </Button>
