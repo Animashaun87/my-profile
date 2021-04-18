@@ -1,7 +1,11 @@
 import React from "react";
 import colors from "../../utils/colors";
 import "../../utils/styles/pages.css";
-import { Icon } from "antd";
+import {
+  ContactsOutlined,
+  MailOutlined,
+  PhoneOutlined,
+} from "@ant-design/icons";
 
 function ContactMe() {
   return (
@@ -14,8 +18,7 @@ function ContactMe() {
       <div className="info">
         <div style={styles.card}>
           <h4>
-            <Icon
-              type="phone"
+            <PhoneOutlined
               style={{ paddingRight: "5px", transform: "rotate(120deg)" }}
             />
             Phone Number
@@ -25,7 +28,7 @@ function ContactMe() {
 
         <div style={styles.card}>
           <h4>
-            <Icon type="mail" style={{ paddingRight: "5px" }} />
+            <MailOutlined style={{ paddingRight: "5px" }} />
             Email
           </h4>
           <span style={{ fontWeight: "bold" }}>
@@ -35,7 +38,7 @@ function ContactMe() {
 
         <div style={styles.card}>
           <h4>
-            <Icon type="map" style={{ paddingRight: "5px" }} />
+            <ContactsOutlined style={{ paddingRight: "5px" }} />
             Address
           </h4>
           <p style={{ fontWeight: "bold" }} className="contact-text">
