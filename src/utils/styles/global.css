@@ -642,7 +642,7 @@
 
 @media (max-width: 576px) {
   .page-banner {
-    min-height: 226px;
+    min-height: 120px;
   }
 }
 

@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Layout } from "antd";
 import colors from "../../utils/colors";
 import Bidemi from "../../utils/images/Bidemi.jpg";
 import "../../utils/styles/pages.css";
+import AOS from "aos";
 
 function AboutMe({ about }) {
+  useEffect(() => {
+    AOS.init({ duration: 5000 });
+  }, []);
+
   return (
     <>
       <Layout className="about-area" style={{ padding: "80px 0 0 0" }}>
-        <Row className="about-top">
+        <Row
+          className="about-top"
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1500"
+        >
           <Col lg={12} sm={24} xs={24}>
             <div style={{ padding: "50px 0px 0px 20px" }}>
               <h2 style={styles.about} className="about-title">

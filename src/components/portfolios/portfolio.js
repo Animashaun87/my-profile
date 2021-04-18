@@ -4,6 +4,7 @@ import colors from "../../utils/colors";
 import "../../utils/styles/pages.css";
 import galleries from "../../utils/data";
 import Loader from "../../utils/loader";
+import AOS from "aos";
 
 function Portfolio() {
   const [portfolios, setPortfolios] = useState([]);
@@ -20,13 +21,18 @@ function Portfolio() {
         return null;
       }
     }
+    AOS.init({ duration: 5000 });
     fetchGalleries();
   }, []);
 
   return (
     <>
       <Layout style={{ backgroundColor: colors.lightYellow }}>
-        <div>
+        <div
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
           <Row
             style={{ marginTop: "65px" }}
             type="flex"

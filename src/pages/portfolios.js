@@ -11,7 +11,7 @@ function Portfolios() {
   });
   return (
     <>
-      <PageBanner title={"My Portfolio"} />
+      <PageBanner title={"My Portfolios"} />
       <Expertise portBg={"about-area"} wrapper={"wrapper"} />
       <Portfolio />
       <ScrollToTop />

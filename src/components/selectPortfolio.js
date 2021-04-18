@@ -46,17 +46,17 @@ const HomePortfolio = () => {
               key={gallery.id}
             >
               <div
-                className="view grow overlay"
                 data-aos="fade-up"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000"
+                className="view grow overlay"
               >
                 <img
                   src={gallery.image}
                   alt="Porfolio"
                   className="portfolio-img"
                   height="476"
-                  style={{ width: "100%", objectFit: "cover" }}
+                  style={{ width: "100%" }}
                 />
                 <div>
                   <a

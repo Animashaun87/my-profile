@@ -1,10 +1,10 @@
 const Gallery = [
   {
     id: 1,
-    image: "images/gallery1.png",
+    image: "images/fashion.png",
     // altName: "Portfolio",
-    name: "Todo App",
-    url: "https://abidemi-todo.netlify.com",
+    name: "E-commerce",
+    url: "https://github.com/Animashaun87/laravel-fashion",
     showOnHome: true,
   },
   {

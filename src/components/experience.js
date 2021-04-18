@@ -8,12 +8,15 @@ function Experience() {
       <Layout style={styles.layout}>
         <div style={styles.container} className="container">
           <Row>
-            <Col style={{ marginTop: "50px" }}>
+            <Col style={{ marginTop: "16px" }}>
               <h1 style={styles.title} className="exp-title">
                 Experience
               </h1>
             </Col>
-            <Col style={{ marginBottom: 70 }}>
+          </Row>
+
+          <Row type="flex" style={{ flexDirection: "column" }} justify="center">
+            <Col style={{ marginBottom: "18px" }}>
               <div style={styles.experience}>
                 <h2 style={styles.text} className="title-exp-h2">
                   Full Stack Developer
@@ -34,7 +37,8 @@ function Experience() {
                 Nov 1 2019 - Jan 31 2020
               </p>
             </Col>
-            <Col style={{ marginBottom: 70 }}>
+
+            <Col style={{ marginBottom: "16px" }}>
               <div style={styles.experience}>
                 <h2 style={styles.text} className="title-exp-h2">
                   Full Stack Developer
@@ -72,7 +76,7 @@ const styles = {
   },
   title: {
     color: colors.white,
-    fontSize: 80,
+    fontSize: "80px",
     fontWeight: 400,
   },
   experience: {
@@ -95,6 +99,7 @@ const styles = {
     fontSize: "16px",
     fontWeight: 500,
     cursor: "pointer",
+    // paddingBottom: "30%",
   },
 };
 export default Experience;

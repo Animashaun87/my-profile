@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Row, Col, Button } from "antd";
 import {
-  CloseOutlined,
-  ContactsOutlined,
+  CloseSquareFilled,
+  ContactsFilled,
   HomeFilled,
-  MenuOutlined,
-  ProfileOutlined,
-  ProjectOutlined,
+  MenuFoldOutlined,
+  ProfileFilled,
+  ProjectFilled,
 } from "@ant-design/icons";
 import colors from "../utils/colors";
 import "../utils/styles/button.css";
@@ -108,7 +108,7 @@ function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
           <Col className="show-mobile right right-ipad right-mobile show-ipad smaller-phone">
             {!menuOpen ? (
               <Button type="link" onClick={toggleMenu}>
-                <MenuOutlined
+                <MenuFoldOutlined
                   style={{
                     color: colors.lightBrown,
                     fontSize: "28px",
@@ -119,7 +119,7 @@ function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
               </Button>
             ) : (
               <Button type="link" onClick={toggleMenu}>
-                <CloseOutlined
+                <CloseSquareFilled
                   style={{ color: colors.lightBrown, fontSize: "24px" }}
                 />
               </Button>
@@ -157,7 +157,7 @@ function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
                 onClick={toggleMenu}
                 className="mobile-menu-dropdown-item"
               >
-                <ProfileOutlined style={{ paddingRight: "10px" }} />
+                <ProfileFilled style={{ paddingRight: "10px" }} />
                 <span>About</span>
               </div>
             </Link>
@@ -167,7 +167,7 @@ function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
                 onClick={toggleMenu}
                 className="mobile-menu-dropdown-item"
               >
-                <ProjectOutlined style={{ paddingRight: "10px" }} />
+                <ProjectFilled style={{ paddingRight: "10px" }} />
                 <span>Portfolio</span>
               </div>
             </Link>
@@ -177,7 +177,7 @@ function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
                 onClick={toggleMenu}
                 className="mobile-menu-dropdown-item"
               >
-                <ContactsOutlined style={{ paddingRight: "10px" }} />
+                <ContactsFilled style={{ paddingRight: "10px" }} />
                 <span>Contact</span>
               </div>
             </Link>
