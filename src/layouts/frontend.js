@@ -7,6 +7,7 @@ const Frontend = (props) => {
   const [path, setPath] = useState("/");
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
+  const toggleLogo = () => setMenuOpen(false);
 
   const location = useLocation();
   useEffect(() => {
@@ -19,7 +20,7 @@ const Frontend = (props) => {
         path={path}
         toggleMenu={toggleMenu}
         menuOpen={menuOpen}
-        onClick={() => setMenuOpen(false)}
+        toggleLogo={toggleLogo}
       />
       <div style={styles.inner} onClick={() => setMenuOpen(false)}>
         {props.children}
