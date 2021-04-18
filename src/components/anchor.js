@@ -1,6 +1,11 @@
 import React from "react";
-import { Icon, Row, Col } from "antd";
+import { Row, Col } from "antd";
 import colors from "../utils/colors";
+import {
+  GithubOutlined,
+  MediumOutlined,
+  TwitterOutlined,
+} from "@ant-design/icons";
 
 function Anchor() {
   return (
@@ -18,7 +23,7 @@ function Anchor() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Icon type="github" style={styles.footerSocialChild} />
+                  <GithubOutlined style={styles.footerSocialChild} />
                 </a>
               </div>
               <div style={styles.footerSocial}>
@@ -27,7 +32,7 @@ function Anchor() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Icon type="medium" style={styles.footerSocialChild} />
+                  <MediumOutlined style={styles.footerSocialChild} />
                 </a>
               </div>
               <div style={styles.footerSocial}>
@@ -36,7 +41,7 @@ function Anchor() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Icon type="twitter" style={styles.footerSocialChild} />
+                  <TwitterOutlined style={styles.footerSocialChild} />
                 </a>
               </div>
             </div>
