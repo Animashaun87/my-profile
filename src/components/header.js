@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Row, Col, Icon, Button } from "antd";
 import {
   ContactsOutlined,
+  HomeFilled,
   ProfileOutlined,
   ProjectOutlined,
 } from "@ant-design/icons";
@@ -146,7 +147,7 @@ function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
                 onClick={toggleMenu}
                 className="mobile-menu-dropdown-item"
               >
-                <Icon type="home" style={{ paddingRight: "10px" }} />
+                <HomeFilled style={{ paddingRight: "10px" }} />
                 <span>Home</span>
               </div>
             </Link>
