@@ -240,3 +240,28 @@
   padding: 0 5% 20px 5%;
   justify-content: center;
 }
+
+.ant-btn.button {
+  position: relative;
+  width: 250px;
+  text-transform: uppercase;
+  color: #670000;
+  font-size: 16px;
+  height: 45px;
+  border-radius: 100px;
+  font-weight: 400;
+  font-family: sans-serif;
+  text-align: center;
+  transition: all 1.5s ease-in-out;
+  border: 1px solid#670000;
+  letter-spacing: 2px;
+}
+
+.ant-btn.button:hover {
+  box-shadow: 0 1px 1px 0 #670000 inset, 0 1px 1px 0 #670000,
+    0 1px 1px 0 #670000 inset, 0 1px 1px 0 #670000;
+  text-shadow: 0 0 0.5px #670000, 0 0 0.5px #670000;
+  color: #670000;
+  border: 1px solid #670000;
+  transform: scale(1.04);
+}

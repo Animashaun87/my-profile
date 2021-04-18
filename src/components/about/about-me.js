@@ -54,7 +54,7 @@ const styles = {
   img: {
     width: "100%",
     paddingRight: "25px",
-    objectFit: "cover",
+    objectFit: "contain",
   },
 };
 export default AboutMe;

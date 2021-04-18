@@ -545,7 +545,7 @@
 
 @media (max-width: 575px) {
   .about-top {
-    margin-top: -80px !important;
+    margin: -80px 0 -80px 0 !important;
   }
 }
 
@@ -812,6 +812,13 @@
 }
 /* End Of Experience Media Query*/
 
+/* Portfolio Media Query*/
+@media (max-width: 576px) {
+  .row-button {
+    margin-top: -12px !important;
+  }
+}
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .wantsToKnow .wantsToKnow-btn {
     float: left;
@@ -880,5 +887,4 @@
     max-height: auto;
   }
 }
-
 /*End skills*/
