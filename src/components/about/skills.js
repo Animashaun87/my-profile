@@ -5,7 +5,7 @@ import Laravel from "../../utils/images/laravel.jpg";
 import ReactJs from "../../utils/images/react.png";
 import Nodejs from "../../utils/images/nodejs.png";
 import Php from "../../utils/images/php7.png";
-import Css3 from "../../utils/images/css3-logo.png";
+import Mongodb from "../../utils/images/mongodb.png";
 import Javascript from "../../utils/images/javascript.png";
 
 function Skill() {
@@ -53,7 +53,13 @@ function Skill() {
             <img src={Php} alt="Laravel" height="300" className="image-xs" />
           </div>
           <div className="image-background">
-            <img src={Css3} alt="Laravel" height="300" className="image-xs" />
+            <img
+              src={Mongodb}
+              alt="Laravel"
+              height="300"
+              className="image-xs"
+              style={{ width: "100%" }}
+            />
           </div>
         </div>
       </Layout>

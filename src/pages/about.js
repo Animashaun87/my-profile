@@ -11,7 +11,7 @@ function About() {
   });
 
   const info =
-    "Hi, I'm Abidemi Animashaun. I'm a fullstack web developer proficients in HTML, CSS, JavaScript, Reactjs, php, Laravel, and Nodejs. Adept at code writing, performing testing protocols and learning new technologies. Love to work with a team where my work makes a difference.";
+    "Hi! I'm Abidemi Animashaun. I'm a skilled web developer with more than 1-year building functional programs. Tools i used are: Javascript, Php, Reactjs, Nodejs, Laravel. Love to work with a team, learn and improve.";
   return (
     <>
       <PageBanner title={"About"} />

@@ -13,7 +13,7 @@ function Home() {
   });
 
   const info =
-    "Hi! I'm Abidemi Animashaun. I'm a skilled web developer with more than 1-year building functional programs. I write ";
+    "Hi! I'm Abidemi Animashaun. I'm a skilled web developer with more than 1-year building functional programs. Tools i used are: Javascript, Php, Reactjs, Nodejs, Laravel. Love to work with a team, learn and improve.";
 
   return (
     <>
