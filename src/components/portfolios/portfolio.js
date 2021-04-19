@@ -34,7 +34,7 @@ function Portfolio() {
           data-aos-duration="2000"
         >
           <Row
-            style={{ marginTop: "65px" }}
+            style={{ marginTop: "10px" }}
             type="flex"
             justify="center"
             className="portfolio"

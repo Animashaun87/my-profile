@@ -23,13 +23,20 @@ const HomePortfolio = () => {
   return (
     <>
       <Row
-        style={{ marginTop: "65px" }}
+        style={{ marginTop: "10px" }}
         type="flex"
         justify="center"
         className="portfolio"
       >
         <Col>
-          <h2 style={styles.text}>Selected Portfolio</h2>
+          <h2
+            style={styles.text}
+            data-aos="fade-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+          >
+            Selected Portfolio
+          </h2>
         </Col>
       </Row>
 
@@ -48,7 +55,7 @@ const HomePortfolio = () => {
               <div
                 data-aos="fade-up"
                 data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 className="view grow overlay"
               >
                 <img

@@ -310,7 +310,7 @@
   .expertise-title {
     display: flex;
     justify-content: flex-start;
-    margin-top: 50px !important;
+    margin-top: 24px !important;
     margin-left: 32px !important;
   }
 }
@@ -515,7 +515,7 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-area {
     margin-right: 50px !important;
-    padding: 0px 20px !important;
+    padding: 10px 20px !important;
   }
 }
 
@@ -534,6 +534,7 @@
 @media (max-width: 575px) {
   .about-area {
     margin-right: 0px !important;
+    padding: 38px 0 0 0 !important;
   }
 }
 

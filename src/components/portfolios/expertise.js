@@ -12,14 +12,19 @@ function Expertise(props) {
         <Row
           type="flex"
           justify="center"
-          style={{ margin: "78px 0px 45px 0px" }}
+          style={{ margin: "28px 0px 45px 0px" }}
           className="expertise-title"
         >
           <Col>
             <h2 style={styles.expertise}>My Expertise</h2>
           </Col>
         </Row>
-        <Row type="flex" justify="space-around" className="expertise-top">
+        <Row
+          type="flex"
+          justify="space-around"
+          className="expertise-top"
+          style={{ marginTop: "-48px" }}
+        >
           <Col md={8} sm={12} xs={24}>
             <div
               style={styles.expertiseCard}

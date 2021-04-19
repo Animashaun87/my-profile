@@ -12,7 +12,7 @@ function AboutMe({ about }) {
 
   return (
     <>
-      <Layout className="about-area" style={{ padding: "80px 0 0 0" }}>
+      <Layout className="about-area" style={{ padding: "10px 0 0 0" }}>
         <Row
           className="about-top"
           data-aos="fade-up"

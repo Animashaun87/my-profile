@@ -13,14 +13,14 @@ function Home() {
   });
 
   const info =
-    "Hi, I'm Abidemi Animashaun. I'm a fullstack web developer proficients in HTML, CSS, JavaScript, Reactjs, php, Laravel, and Nodejs. Adept at code writing, performing testing protocols and learning new technologies. Love to work with a team where my work makes a difference.";
+    "Hi! I'm Abidemi Animashaun. I'm a skilled web developer with more than 1-year building functional programs. I write ";
 
   return (
     <>
       <Banner />
       <AboutMe about={info} />
       <Experience />
-      <Expertise bgColor={"home-bg"} />
+      <Expertise bgColor={"home-bg"} wrapper={"wrapper"} />
       <HomePortfolio />
       <ScrollToTop />
     </>
