@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Layout } from "antd";
 import colors from "../utils/colors";
+import ChangeText from "./animationText";
 
 function PageBanner(props) {
   const { title } = props;
@@ -9,7 +10,12 @@ function PageBanner(props) {
     <>
       <Layout>
         <div style={styles.contactDiv} className="page-banner">
-          <h2 style={styles.contactH2}>{title}</h2>
+          <h2 style={styles.contactH2} className="hide-text">
+            {title}
+          </h2>
+          <h2 style={styles.ChangeText} className="hide-text-big-screen">
+            <ChangeText />
+          </h2>
         </div>
       </Layout>
     </>
@@ -30,7 +36,13 @@ const styles = {
     color: colors.lightBrown,
     fontSize: "30px",
     fontWeight: 400,
-    paddingLeft: "28px",
+    paddingLeft: "18px",
+  },
+  ChangeText: {
+    color: colors.lightBrown,
+    fontSize: "30px",
+    fontWeight: "bold",
+    paddingLeft: "18px",
   },
 };
 
