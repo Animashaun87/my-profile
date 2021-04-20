@@ -7,7 +7,7 @@ function ChangeText() {
       <Typical
         steps={["Hire me", 2000, " for a project", 1500]}
         loop={Infinity}
-        // wrapper="p"
+        wrapper="p"
       />
     </>
   );
