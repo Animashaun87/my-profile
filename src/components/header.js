@@ -4,7 +4,6 @@ import {
   CloseSquareFilled,
   ContactsFilled,
   HomeFilled,
-  MenuFoldOutlined,
   MenuUnfoldOutlined,
   ProfileFilled,
   ProjectFilled,
