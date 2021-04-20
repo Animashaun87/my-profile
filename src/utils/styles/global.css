@@ -51,6 +51,14 @@
   }
 }
 
+@media (min-width: 280px) {
+  .logo {
+    position: absolute;
+    left: -32px !important;
+    top: -24px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .hide-ipad {
     display: none !important;
@@ -76,14 +84,6 @@
     position: absolute;
     right: 5px !important;
     top: 24px;
-  }
-}
-
-@media (min-width: 280px) {
-  .logo {
-    position: absolute;
-    left: -24px !important;
-    top: -24px;
   }
 }
 
@@ -540,7 +540,25 @@
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .about-top {
-    margin-top: -80px !important;
+    margin-top: -40px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-top {
+    margin-top: -40px !important;
+  }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+  .about-top {
+    margin: -40px 0 -30px 0 !important;
+  }
+}
+
+@media (min-width: 1366px) {
+  .about-top {
+    margin: 20px 0 20px 0 !important;
   }
 }
 
@@ -653,25 +671,13 @@
   }
 }
 
-@media (min-width: 1366px) {
-  .hide-text-big-screen {
-    display: none !important;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .hide-text-big-screen {
-    display: none !important;
-  }
-}
-
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  .hide-text-big-screen {
+  .hide-text {
     display: none !important;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 1366px) {
   .hide-text-big-screen {
     display: none !important;
   }

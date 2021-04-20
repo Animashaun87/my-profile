@@ -5,6 +5,7 @@ import {
   ContactsFilled,
   HomeFilled,
   MenuFoldOutlined,
+  MenuUnfoldOutlined,
   ProfileFilled,
   ProjectFilled,
 } from "@ant-design/icons";
@@ -107,20 +108,28 @@ function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
 
           <Col className="show-mobile right right-ipad right-mobile show-ipad smaller-phone">
             {!menuOpen ? (
-              <Button type="link" onClick={toggleMenu}>
-                <MenuFoldOutlined
+              <Button
+                type="link"
+                onClick={toggleMenu}
+                style={{ marginTop: "-5px" }}
+              >
+                <MenuUnfoldOutlined
                   style={{
                     color: colors.lightBrown,
-                    fontSize: "28px",
+                    fontSize: "32px",
                     fontWeight: 900,
                     transition: "all 5s ease-out",
                   }}
                 />
               </Button>
             ) : (
-              <Button type="link" onClick={toggleMenu}>
+              <Button
+                type="link"
+                onClick={toggleMenu}
+                style={{ marginTop: "-5px" }}
+              >
                 <CloseSquareFilled
-                  style={{ color: colors.lightBrown, fontSize: "24px" }}
+                  style={{ color: colors.lightBrown, fontSize: "36px" }}
                 />
               </Button>
             )}

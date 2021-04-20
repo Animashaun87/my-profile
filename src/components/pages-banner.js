@@ -13,9 +13,9 @@ function PageBanner(props) {
           <h2 style={styles.contactH2} className="hide-text">
             {title}
           </h2>
-          <h2 style={styles.ChangeText} className="hide-text-big-screen">
+          <h3 style={styles.ChangeText} className="hide-text-big-screen ">
             <ChangeText />
-          </h2>
+          </h3>
         </div>
       </Layout>
     </>
@@ -35,13 +35,12 @@ const styles = {
   contactH2: {
     color: colors.lightBrown,
     fontSize: "30px",
-    fontWeight: 400,
+    fontWeight: "400px",
     paddingLeft: "18px",
   },
   ChangeText: {
     color: colors.lightBrown,
     fontSize: "30px",
-    fontWeight: "bold",
     paddingLeft: "18px",
   },
 };
