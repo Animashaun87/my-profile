@@ -54,7 +54,7 @@ function ContactMe() {
 const styles = {
   contactMe: {
     color: colors.lighterBrown,
-    marginBottom: "0px",
+    marginBottom: "0",
   },
   card: {
     backgroundColor: colors.white,

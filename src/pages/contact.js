@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ContactMe from "../components/contact/contact-me";
 import PageBanner from "../components/pages-banner";
 import { ScrollToTop } from "../utils/back-top";
+import useDocumentTitle from "../utils/useDocumentTitle";
 
 function Contact() {
-  useEffect(() => {
-    document.title = "Contact";
-  });
+  const title = "Contact";
+  useDocumentTitle(title);
   return (
     <>
       <PageBanner title={"Contact"} />

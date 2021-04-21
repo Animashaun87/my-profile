@@ -1,14 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 import PageBanner from "../components/pages-banner";
 import Expertise from "../components/portfolios/expertise";
 import Portfolio from "../components/portfolios/portfolio";
 import "../utils/styles/pages.css";
 import { ScrollToTop } from "../utils/back-top";
+import useDocumentTitle from "../utils/useDocumentTitle";
 
 function Portfolios() {
-  useEffect(() => {
-    document.title = "Portfolio";
-  });
+  const title = "Portfolio";
+  useDocumentTitle(title);
+
   return (
     <>
       <PageBanner title={"My Portfolios"} />

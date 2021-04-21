@@ -4,8 +4,7 @@ import { Layout } from "antd";
 import colors from "../utils/colors";
 import ChangeText from "./animationText";
 
-function PageBanner(props) {
-  const { title } = props;
+function PageBanner({ title }) {
   return (
     <>
       <Layout>
