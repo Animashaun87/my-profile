@@ -63,7 +63,7 @@ const HomePortfolio = () => {
                   alt="Porfolio"
                   className="portfolio-img"
                   height="476"
-                  style={{ width: "100%" }}
+                  style={{ width: "100%", objectFit: "cover" }}
                 />
                 <div>
                   <a

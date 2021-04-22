@@ -16,28 +16,6 @@ function Experience() {
           </Row>
 
           <Row type="flex" style={{ flexDirection: "column" }} justify="center">
-            <Col style={{ marginBottom: "18px" }}>
-              <div style={styles.experience}>
-                <h2 style={styles.text} className="title-exp-h2">
-                  Full Stack Developer
-                </h2>
-                <span>
-                  <a
-                    href="https://cubiclab.net"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={styles.subText2}
-                    className="exp-link"
-                  >
-                    Cubiclab, Abuja
-                  </a>
-                </span>
-              </div>
-              <p style={styles.subText1} className="exp-date">
-                Nov 1 2019 - Jan 31 2020
-              </p>
-            </Col>
-
             <Col style={{ marginBottom: "16px" }}>
               <div style={styles.experience}>
                 <h2 style={styles.text} className="title-exp-h2">
@@ -55,9 +33,88 @@ function Experience() {
                   </a>
                 </span>
               </div>
-              <p style={styles.subText1} className="exp-date">
-                Nov 1 2018 - Dec 20 2019
-              </p>
+              <div style={{ marginTop: "-18px" }}>
+                <p style={styles.subText1}>[REACTJS, NODEJS, LARAVEL]</p>
+                <p style={styles.subText1} className="exp-date">
+                  Nov 2020 - Till date
+                </p>
+              </div>
+            </Col>
+
+            <Col style={{ marginBottom: "16px" }}>
+              <div style={styles.experience}>
+                <h2 style={styles.text} className="title-exp-h2">
+                  Instructor
+                </h2>
+                <span>
+                  <a
+                    href="https://brytahub.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={styles.subText2}
+                    className="exp-link"
+                  >
+                    Brytahub, Abuja
+                  </a>
+                </span>
+              </div>
+              <div style={{ marginTop: "-18px" }}>
+                <p style={styles.subText1}>[REACTJS, LARAVEL]</p>
+                <p style={styles.subText1} className="exp-date">
+                  Feb 2020 - Oct 2020
+                </p>
+              </div>
+            </Col>
+
+            <Col style={{ marginBottom: "18px" }}>
+              <div style={styles.experience}>
+                <h2 style={styles.text} className="title-exp-h2">
+                  Frontend Developer
+                </h2>
+                <span>
+                  <a
+                    href="https://cubiclab.net"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={styles.subText2}
+                    className="exp-link"
+                  >
+                    Cubiclab, Abuja
+                  </a>
+                </span>
+              </div>
+              <div style={{ marginTop: "-18px" }}>
+                <p style={styles.subText1}>[HTML, CSS, PHP, JQUERY]</p>
+                <p style={styles.subText1} className="exp-date">
+                  Nov 2019 - Feb 2020
+                </p>
+              </div>
+            </Col>
+
+            <Col style={{ marginBottom: "" }}>
+              <div style={styles.experience}>
+                <h2 style={styles.text} className="title-exp-h2">
+                  Trainee
+                </h2>
+                <span>
+                  <a
+                    href="https://brytahub.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={styles.subText2}
+                    className="exp-link"
+                  >
+                    Brytahub, Abuja
+                  </a>
+                </span>
+              </div>
+
+              <div style={{ marginTop: "-18px" }}>
+                <p style={styles.subText1}>[HTML, CSS, PHP, LARAVEL]</p>
+                <p style={styles.subText1} className="exp-date">
+                  Nov 2018 - Oct 2019
+                </p>
+              </div>
             </Col>
           </Row>
         </div>
@@ -82,6 +139,7 @@ const styles = {
   experience: {
     display: "flex",
     justifyContent: "space-between",
+    alignItems: "center",
   },
   text: {
     color: colors.lightYellow,
