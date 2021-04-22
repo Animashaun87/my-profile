@@ -34,7 +34,9 @@ function Experience() {
                 </span>
               </div>
               <div style={{ marginTop: "-18px" }}>
-                <p style={styles.subText1}>[REACTJS, NODEJS, LARAVEL]</p>
+                <p style={styles.subText1} className="exp-text">
+                  [REACTJS, NODEJS, LARAVEL]
+                </p>
                 <p style={styles.subText1} className="exp-date">
                   Nov 2020 - Till date
                 </p>
@@ -59,7 +61,9 @@ function Experience() {
                 </span>
               </div>
               <div style={{ marginTop: "-18px" }}>
-                <p style={styles.subText1}>[REACTJS, LARAVEL]</p>
+                <p style={styles.subText1} className="exp-text">
+                  [REACTJS, LARAVEL]
+                </p>
                 <p style={styles.subText1} className="exp-date">
                   Feb 2020 - Oct 2020
                 </p>
@@ -84,7 +88,9 @@ function Experience() {
                 </span>
               </div>
               <div style={{ marginTop: "-18px" }}>
-                <p style={styles.subText1}>[HTML, CSS, PHP, JQUERY]</p>
+                <p style={styles.subText1} className="exp-text">
+                  [HTML, CSS, PHP, JQUERY]
+                </p>
                 <p style={styles.subText1} className="exp-date">
                   Nov 2019 - Feb 2020
                 </p>
@@ -110,7 +116,9 @@ function Experience() {
               </div>
 
               <div style={{ marginTop: "-18px" }}>
-                <p style={styles.subText1}>[HTML, CSS, PHP, LARAVEL]</p>
+                <p style={styles.subText1} className="exp-text">
+                  [HTML, CSS, PHP, LARAVEL]
+                </p>
                 <p style={styles.subText1} className="exp-date">
                   Nov 2018 - Oct 2019
                 </p>
@@ -139,7 +147,6 @@ const styles = {
   experience: {
     display: "flex",
     justifyContent: "space-between",
-    alignItems: "center",
   },
   text: {
     color: colors.lightYellow,
@@ -157,7 +164,6 @@ const styles = {
     fontSize: "16px",
     fontWeight: 500,
     cursor: "pointer",
-    // paddingBottom: "30%",
   },
 };
 export default Experience;

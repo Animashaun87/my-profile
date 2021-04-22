@@ -311,7 +311,7 @@
     display: flex;
     justify-content: flex-start;
     margin-top: 24px !important;
-    margin-left: 32px !important;
+    margin-left: 24px !important;
   }
 }
 
@@ -824,6 +824,13 @@
 /* End of footer media query*/
 
 /* Experience Media Query*/
+
+@media (max-width: 575px) {
+  .exp-text {
+    margin-top: 12px !important;
+  }
+}
+
 @media (max-width: 575px) {
   .exp-title {
     font-size: 45px !important;
