@@ -10,11 +10,12 @@ import {
 } from "@ant-design/icons";
 import colors from "../utils/colors";
 import "../utils/styles/button.css";
-import { Link } from "@reach/router";
+import { Link } from "react-router-dom";
 import "../utils/styles/pages.css";
 import ScrollIndicator from "../utils/scroll-progess";
 import PropTypes from "prop-types";
 import ChangeText from "./animationText";
+import { debounce } from "../utils/helper";
 
 function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
   const [scrolled, setScrolled] = useState(false);
@@ -37,7 +38,7 @@ function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
 
   return (
     <>
-      <div className={scrolled ? "navbar" : "nav"}>
+      <div className={`${scrolled ? "navbar" : "nav"}`}>
         <ScrollIndicator />
         <Row
           type="flex"
@@ -58,7 +59,7 @@ function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
           <Col
             lg={13}
             className="hide-mobile hide-ipad"
-            style={{ marginBottom: "16px" }}
+            style={{ marginBottom: "22px" }}
           >
             <div style={{ display: "flex" }}>
               <div style={{ paddingRight: "50px" }}>
@@ -69,7 +70,7 @@ function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
                   Home
                 </Link>
               </div>
-              <div style={{ paddingRight: 50 }}>
+              <div style={{ paddingRight: "50px" }}>
                 <Link
                   to="/about"
                   className={`header ${path === "/about" ? "active" : ""}`}
@@ -77,7 +78,7 @@ function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
                   About
                 </Link>
               </div>
-              <div style={{ paddingRight: 50 }}>
+              <div style={{ paddingRight: "50px" }}>
                 <Link
                   to="/portfolio"
                   className={`header ${path === "/portfolio" ? "active" : ""}`}

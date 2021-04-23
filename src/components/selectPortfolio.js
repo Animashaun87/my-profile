@@ -3,7 +3,7 @@ import { Row, Col, Button } from "antd";
 import colors from "../utils/colors";
 import galleries from "../utils/data";
 import Loader from "../utils/loader";
-import { Link } from "@reach/router";
+import { Link } from "react-router-dom";
 import "../utils/styles/pages.css";
 import AOS from "aos";
 

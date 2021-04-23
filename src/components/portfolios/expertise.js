@@ -6,6 +6,7 @@ import "../../utils/styles/pages.css";
 
 function Expertise(props) {
   const { bgColor, portBg, wrapper } = props;
+
   return (
     <>
       <Layout className={`${bgColor} || ${portBg}`}>

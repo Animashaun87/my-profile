@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col, Layout } from "antd";
-import { Link } from "@reach/router";
+import { Link } from "react-router-dom";
 import colors from "../utils/colors";
 import "../utils/styles/button.css";
 import Anchor from "./anchor";

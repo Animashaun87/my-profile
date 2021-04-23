@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Frontend from "./layouts/frontend";
-import { Router } from "@reach/router";
 import "antd/dist/antd.css";
 import "./utils/styles/global.css";
 import Loader from "./utils/loader";
@@ -40,12 +40,14 @@ function App() {
     <>
       <Suspense fallback={<Loader />}>
         <Router>
-          <ScrollToTop path="/">
-            <Frontend path="/">
-              <Home path="/" />
-              <About path="about" />
-              <Portfolios path="portfolio" />
-              <Contact path="contact" />
+          <ScrollToTop>
+            <Frontend>
+              <Switch>
+                <Route path="/" exact component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/portfolio" component={Portfolios} />
+                <Route path="/contact" component={Contact} />
+              </Switch>
             </Frontend>
           </ScrollToTop>
         </Router>
