@@ -2,9 +2,9 @@ import React from "react";
 import colors from "../../utils/colors";
 import "../../utils/styles/pages.css";
 import {
-  ContactsOutlined,
+  GithubOutlined,
+  LinkedinFilled,
   MailOutlined,
-  PhoneOutlined,
 } from "@ant-design/icons";
 
 function ContactMe() {
@@ -18,18 +18,22 @@ function ContactMe() {
       <div className="info">
         <div style={styles.card}>
           <h4>
-            <PhoneOutlined
-              style={{ paddingRight: "5px", transform: "rotate(120deg)" }}
-            />
-            Phone Number
+            <a
+              href="https://linkedin.com/in/qudus-animashaun-3561b120b"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedinFilled
+                style={{ paddingRight: "5px", fontSize: "28px" }}
+              />
+            </a>
           </h4>
-          <p style={{ fontWeight: "bold" }}>08165519459</p>
+          <p style={{ fontWeight: "bold" }}>linkedin</p>
         </div>
 
         <div style={styles.card}>
           <h4>
-            <MailOutlined style={{ paddingRight: "5px" }} />
-            Email
+            <MailOutlined style={{ paddingRight: "5px", fontSize: "28px" }} />
           </h4>
           <span style={{ fontWeight: "bold" }}>
             animashaunbidemi07@gmail.com
@@ -38,13 +42,21 @@ function ContactMe() {
 
         <div style={styles.card}>
           <h4>
-            <ContactsOutlined style={{ paddingRight: "5px" }} />
-            Address
+            <a
+              href="https://github.com/animashaun87"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GithubOutlined
+                style={{
+                  paddingRight: "5px",
+                  fontSize: "28px",
+                  color: colors.black,
+                }}
+              />
+            </a>
           </h4>
-          <p style={{ fontWeight: "bold" }} className="contact-text">
-            No 20, Passo road after Uniabuja Teaching Hospital, Gwagwalada,
-            Abuja.
-          </p>
+          <p style={{ fontWeight: "bold" }}>Github</p>
         </div>
       </div>
     </>

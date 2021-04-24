@@ -3,8 +3,8 @@ import { Row, Col } from "antd";
 import colors from "../utils/colors";
 import {
   GithubOutlined,
+  LinkedinFilled,
   MediumOutlined,
-  TwitterOutlined,
 } from "@ant-design/icons";
 
 function Anchor() {
@@ -37,11 +37,11 @@ function Anchor() {
               </div>
               <div style={styles.footerSocial}>
                 <a
-                  href="https://bidemi.twitter"
+                  href="https://linkedin.com/in/qudus-animashaun-3561b120b"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <TwitterOutlined style={styles.footerSocialChild} />
+                  <LinkedinFilled style={styles.footerSocialChild} />
                 </a>
               </div>
             </div>
