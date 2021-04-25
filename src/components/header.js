@@ -21,11 +21,8 @@ function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
 
   const handleScroll = () => {
     const scrollCheck = document.scrollingElement.scrollTop;
-    const height = document.documentElement.offsetHeight;
-    console.log(height);
     if (scrollCheck > 170) {
       setScrolled(true);
-      console.log(scrollCheck, window.scrollY);
     } else {
       setScrolled(false);
     }
@@ -40,160 +37,164 @@ function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
 
   return (
     <>
-      <div className={`${scrolled ? "fixed-nav" : "main"}`}>
-        <ScrollIndicator />
-        <Row
-          type="flex"
-          align="middle"
-          style={{
-            padding: "0px 45px 0px 45px",
-            height: "100px",
-            boxShadow: 20,
-          }}
-        >
-          <Col lg={8} style={{ marginBottom: "15px" }}>
-            <h2 className="logo" onClick={toggleLogo}>
-              <Link to="/" style={styles.headerLogo}>
-                ABIDEMI
-              </Link>
-            </h2>
-          </Col>
-          <Col
-            lg={13}
-            className="hide-mobile hide-ipad"
-            style={{ marginBottom: "22px" }}
-          >
-            <div style={{ display: "flex" }}>
-              <div style={{ paddingRight: "50px" }}>
-                <Link
-                  to="/"
-                  className={`header ${path === "/" ? "active" : ""}`}
-                >
-                  Home
-                </Link>
-              </div>
-              <div style={{ paddingRight: "50px" }}>
-                <Link
-                  to="/about"
-                  className={`header ${path === "/about" ? "active" : ""}`}
-                >
-                  About
-                </Link>
-              </div>
-              <div style={{ paddingRight: "50px" }}>
-                <Link
-                  to="/portfolio"
-                  className={`header ${path === "/portfolio" ? "active" : ""}`}
-                >
-                  portfolio
-                </Link>
-              </div>
-              <div>
-                <Link
-                  to="/contact"
-                  className={`header ${path === "/contact" ? "active" : ""}`}
-                >
-                  Contact
-                </Link>
-              </div>
-            </div>
-          </Col>
-          <Col
-            lg={3}
-            className="hide-mobile hide-ipad"
-            style={{ marginBottom: "15px" }}
-          >
-            <h4 style={styles.typicalText} className="change-text">
-              <ChangeText />
-            </h4>
-          </Col>
-
-          <Col className="show-mobile right right-ipad right-mobile show-ipad smaller-phone">
-            {!menuOpen ? (
-              <Button
-                type="link"
-                onClick={toggleMenu}
-                style={{ marginTop: "-5px" }}
-              >
-                <MenuUnfoldOutlined
-                  style={{
-                    color: colors.lightBrown,
-                    fontSize: "32px",
-                    fontWeight: 900,
-                    transition: "all 5s ease-out",
-                  }}
-                />
-              </Button>
-            ) : (
-              <Button
-                type="link"
-                onClick={toggleMenu}
-                style={{ marginTop: "-5px" }}
-              >
-                <CloseSquareFilled
-                  style={{ color: colors.lightBrown, fontSize: "36px" }}
-                />
-              </Button>
-            )}
-          </Col>
-        </Row>
-
-        {menuOpen && (
-          <div
-            className="show-mobile show-ipad"
+      <div style={{ height: 82 }}>
+        <div className={`${scrolled ? "fixed-nav" : "main"}`}>
+          <ScrollIndicator />
+          <Row
+            type="flex"
+            align="middle"
             style={{
-              width: "90%",
-              backgroundColor: colors.lightBrown,
-              position: "absolute",
-              zIndex: 999,
-              top: "84px",
-              borderRadius: "0 0 25px 0",
-              marginRight: "10%",
-              transition: "all 0.4s ease-in",
+              padding: "0px 45px 0px 45px",
+              height: "100px",
+              boxShadow: 20,
             }}
           >
-            <Link to="/">
-              <div
-                style={styles.mobileMenu}
-                onClick={toggleMenu}
-                className="mobile-menu-dropdown-item"
-              >
-                <HomeFilled style={{ paddingRight: "10px" }} />
-                <span>Home</span>
+            <Col lg={8} style={{ marginBottom: "15px" }}>
+              <h2 className="logo" onClick={toggleLogo}>
+                <Link to="/" style={styles.headerLogo}>
+                  ABIDEMI
+                </Link>
+              </h2>
+            </Col>
+            <Col
+              lg={13}
+              className="hide-mobile hide-ipad"
+              style={{ marginBottom: "22px" }}
+            >
+              <div style={{ display: "flex" }}>
+                <div style={{ paddingRight: "50px" }}>
+                  <Link
+                    to="/"
+                    className={`header ${path === "/" ? "active" : ""}`}
+                  >
+                    Home
+                  </Link>
+                </div>
+                <div style={{ paddingRight: "50px" }}>
+                  <Link
+                    to="/about"
+                    className={`header ${path === "/about" ? "active" : ""}`}
+                  >
+                    About
+                  </Link>
+                </div>
+                <div style={{ paddingRight: "50px" }}>
+                  <Link
+                    to="/portfolio"
+                    className={`header ${
+                      path === "/portfolio" ? "active" : ""
+                    }`}
+                  >
+                    portfolio
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    to="/contact"
+                    className={`header ${path === "/contact" ? "active" : ""}`}
+                  >
+                    Contact
+                  </Link>
+                </div>
               </div>
-            </Link>
-            <Link to="/about">
-              <div
-                style={styles.mobileMenu}
-                onClick={toggleMenu}
-                className="mobile-menu-dropdown-item"
-              >
-                <ProfileFilled style={{ paddingRight: "10px" }} />
-                <span>About</span>
-              </div>
-            </Link>
-            <Link to="/portfolio">
-              <div
-                style={styles.mobileMenu}
-                onClick={toggleMenu}
-                className="mobile-menu-dropdown-item"
-              >
-                <ProjectFilled style={{ paddingRight: "10px" }} />
-                <span>Portfolio</span>
-              </div>
-            </Link>
-            <Link to="/contact">
-              <div
-                style={styles.mobileMenu}
-                onClick={toggleMenu}
-                className="mobile-menu-dropdown-item"
-              >
-                <ContactsFilled style={{ paddingRight: "10px" }} />
-                <span>Contact</span>
-              </div>
-            </Link>
-          </div>
-        )}
+            </Col>
+            <Col
+              lg={3}
+              className="hide-mobile hide-ipad"
+              style={{ marginBottom: "15px" }}
+            >
+              <h4 style={styles.typicalText} className="change-text">
+                <ChangeText />
+              </h4>
+            </Col>
+
+            <Col className="show-mobile right right-ipad right-mobile show-ipad smaller-phone">
+              {!menuOpen ? (
+                <Button
+                  type="link"
+                  onClick={toggleMenu}
+                  style={{ marginTop: "-5px" }}
+                >
+                  <MenuUnfoldOutlined
+                    style={{
+                      color: colors.lightBrown,
+                      fontSize: "32px",
+                      fontWeight: 900,
+                      transition: "all 5s ease-out",
+                    }}
+                  />
+                </Button>
+              ) : (
+                <Button
+                  type="link"
+                  onClick={toggleMenu}
+                  style={{ marginTop: "-5px" }}
+                >
+                  <CloseSquareFilled
+                    style={{ color: colors.lightBrown, fontSize: "36px" }}
+                  />
+                </Button>
+              )}
+            </Col>
+          </Row>
+
+          {menuOpen && (
+            <div
+              className="show-mobile show-ipad"
+              style={{
+                width: "90%",
+                backgroundColor: colors.lightBrown,
+                position: "absolute",
+                zIndex: 999,
+                top: "84px",
+                borderRadius: "0 0 25px 0",
+                marginRight: "10%",
+                transition: "all 0.4s ease-in",
+              }}
+            >
+              <Link to="/">
+                <div
+                  style={styles.mobileMenu}
+                  onClick={toggleMenu}
+                  className="mobile-menu-dropdown-item"
+                >
+                  <HomeFilled style={{ paddingRight: "10px" }} />
+                  <span>Home</span>
+                </div>
+              </Link>
+              <Link to="/about">
+                <div
+                  style={styles.mobileMenu}
+                  onClick={toggleMenu}
+                  className="mobile-menu-dropdown-item"
+                >
+                  <ProfileFilled style={{ paddingRight: "10px" }} />
+                  <span>About</span>
+                </div>
+              </Link>
+              <Link to="/portfolio">
+                <div
+                  style={styles.mobileMenu}
+                  onClick={toggleMenu}
+                  className="mobile-menu-dropdown-item"
+                >
+                  <ProjectFilled style={{ paddingRight: "10px" }} />
+                  <span>Portfolio</span>
+                </div>
+              </Link>
+              <Link to="/contact">
+                <div
+                  style={styles.mobileMenu}
+                  onClick={toggleMenu}
+                  className="mobile-menu-dropdown-item"
+                >
+                  <ContactsFilled style={{ paddingRight: "10px" }} />
+                  <span>Contact</span>
+                </div>
+              </Link>
+            </div>
+          )}
+        </div>
       </div>
     </>
   );
