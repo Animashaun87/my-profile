@@ -29,7 +29,7 @@ function ProfileFooter() {
             <Col>
               <div>
                 <Link to="/contact" className="btn white-button sm-left">
-                  lets connect
+                  let's connect
                 </Link>
               </div>
             </Col>

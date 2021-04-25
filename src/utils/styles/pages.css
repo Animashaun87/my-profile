@@ -22,18 +22,17 @@
   padding: 2px 0px 10px 0px;
 }
 
-.nav {
+.main {
   background-color: #ffefae;
   height: auto;
   top: 0;
 }
 
-.navbar {
+.fixed-nav {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999;
-  /* padding: 0 65px; */
   margin: auto;
   height: 82px !important;
   background-color: #ffffff !important;

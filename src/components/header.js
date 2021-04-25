@@ -21,8 +21,11 @@ function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
 
   const handleScroll = () => {
     const scrollCheck = document.scrollingElement.scrollTop;
+    const height = document.documentElement.offsetHeight;
+    console.log(height);
     if (scrollCheck > 170) {
       setScrolled(true);
+      console.log(scrollCheck, window.scrollY);
     } else {
       setScrolled(false);
     }
@@ -37,7 +40,7 @@ function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
 
   return (
     <>
-      <div className={`${scrolled ? "navbar" : "nav"}`}>
+      <div className={`${scrolled ? "fixed-nav" : "main"}`}>
         <ScrollIndicator />
         <Row
           type="flex"

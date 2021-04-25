@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Row, Col, Layout } from "antd";
 import colors from "../../utils/colors";
+import { Link } from "react-router-dom";
 import Bidemi from "../../utils/images/Bidemi.jpg";
 import "../../utils/styles/pages.css";
 import AOS from "aos";
@@ -25,6 +26,15 @@ function AboutMe({ about }) {
                 About
               </h2>
               <p className="about-text about-paragraph">{about}</p>
+              <p>
+                {" "}
+                <Link
+                  to="/contact"
+                  className="about-btn about-button sm-left hide-mobile hide-ipad"
+                >
+                  let's connect
+                </Link>
+              </p>
             </div>
           </Col>
           <Col lg={12} sm={24} xs={24}>
