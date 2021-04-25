@@ -37,7 +37,7 @@ function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
 
   return (
     <>
-      <div style={{ height: 82 }}>
+      <div style={{ height: "82px" }}>
         <div className={`${scrolled ? "fixed-nav" : "main"}`}>
           <ScrollIndicator />
           <Row
