@@ -62,7 +62,7 @@ function Portfolio() {
                       alt="portfolio"
                       className="portfolio-img"
                       height="476"
-                      style={{ width: "100%" }}
+                      style={{ width: "100%", objectFit: "cover" }}
                     />
                     <div>
                       <a

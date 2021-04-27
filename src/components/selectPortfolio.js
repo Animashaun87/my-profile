@@ -12,7 +12,7 @@ const HomePortfolio = () => {
   const [loading, setLoading] = useState(false);
 
   const filteredGallery = () =>
-    galleries.filter(({ showOnHome }) => showOnHome === true);
+    galleries.filter(({ showOnHome }) => showOnHome === false);
 
   useEffect(() => {
     setShowGalleries(filteredGallery);

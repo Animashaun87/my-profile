@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Row, Col, Button } from "antd";
 import {
   CloseSquareFilled,
@@ -17,27 +17,30 @@ import PropTypes from "prop-types";
 import ChangeText from "./animationText";
 
 function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
+  const [prevScroll, setPrevScroll] = useState(0);
   const [scrolled, setScrolled] = useState(false);
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     const scrollCheck = document.scrollingElement.scrollTop;
-    if (scrollCheck > 170) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
+    const currentScroll = window.pageYOffset;
+    setScrolled(
+      (prevScroll < currentScroll && prevScroll - currentScroll < 70) ||
+        currentScroll < 10
+    );
+    setScrolled(scrollCheck > 170 ? true : false);
+    setPrevScroll(currentScroll);
+  }, [prevScroll]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [prevScroll, scrolled, handleScroll]);
 
   return (
     <>
-      <div style={{ height: "82px" }}>
+      <div style={{ height: "82px", top: scrolled ? "0" : "-82px" }}>
         <div className={`${scrolled ? "fixed-nav" : "main"}`}>
           <ScrollIndicator />
           <Row
