@@ -35,11 +35,12 @@ function ContactMe() {
           <h4>
             <MailOutlined style={{ paddingRight: "5px", fontSize: "28px" }} />
           </h4>
-          <span style={{ fontWeight: "bold" }}>
+          <span>
             <a
               href="mailto:animashaunbidemi07@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
+              style={{ fontWeight: "bold", color: colors.black }}
             >
               animashaunbidemi07@gmail.com
             </a>
