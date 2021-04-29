@@ -28,7 +28,7 @@ function Anchor() {
               </div>
               <div style={styles.footerSocial}>
                 <a
-                  href="http://medium.com/@animashaunbidemi07"
+                  href="http://medium.com/@abidemi-dev"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
