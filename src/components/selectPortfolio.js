@@ -51,13 +51,11 @@ const HomePortfolio = () => {
               sm={10}
               style={{ marginBottom: "20px" }}
               key={gallery.id}
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
             >
-              <div
-                data-aos="fade-up"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="1000"
-                className="view grow overlay"
-              >
+              <div className="view grow overlay">
                 <img
                   src={gallery.image}
                   alt="Porfolio"

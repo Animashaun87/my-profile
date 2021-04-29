@@ -1,11 +1,7 @@
 import React from "react";
 import colors from "../../utils/colors";
 import "../../utils/styles/pages.css";
-import {
-  GithubOutlined,
-  LinkedinFilled,
-  MailOutlined,
-} from "@ant-design/icons";
+import { GithubFilled, LinkedinFilled, MailFilled } from "@ant-design/icons";
 
 function ContactMe() {
   return (
@@ -25,15 +21,25 @@ function ContactMe() {
             >
               <LinkedinFilled
                 style={{ paddingRight: "5px", fontSize: "28px" }}
+                title="Linkedin"
               />
             </a>
           </h4>
-          <p style={{ fontWeight: "bold" }}>linkedin</p>
+          <a
+            href="https://linkedin.com/in/abidemi-animashaun-3561b120b"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p style={{ fontWeight: "bold", color: colors.black }}>linkedin</p>
+          </a>
         </div>
 
         <div style={styles.card}>
           <h4>
-            <MailOutlined style={{ paddingRight: "5px", fontSize: "28px" }} />
+            <MailFilled
+              style={{ paddingRight: "5px", fontSize: "28px" }}
+              title="Mail"
+            />
           </h4>
           <span>
             <a
@@ -54,16 +60,23 @@ function ContactMe() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GithubOutlined
+              <GithubFilled
                 style={{
                   paddingRight: "5px",
                   fontSize: "28px",
                   color: colors.black,
                 }}
+                title="Github"
               />
             </a>
           </h4>
-          <p style={{ fontWeight: "bold" }}>Github</p>
+          <a
+            href="https://github.com/animashaun87"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p style={{ fontWeight: "bold", color: colors.black }}>Github</p>
+          </a>
         </div>
       </div>
     </>

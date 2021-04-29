@@ -2,9 +2,9 @@ import React from "react";
 import { Row, Col } from "antd";
 import colors from "../utils/colors";
 import {
-  GithubOutlined,
+  GithubFilled,
   LinkedinFilled,
-  MediumOutlined,
+  MediumSquareFilled,
 } from "@ant-design/icons";
 
 function Anchor() {
@@ -23,7 +23,10 @@ function Anchor() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <GithubOutlined style={styles.footerSocialChild} />
+                  <GithubFilled
+                    style={styles.footerSocialChild}
+                    title="Github"
+                  />
                 </a>
               </div>
               <div style={styles.footerSocial}>
@@ -32,16 +35,22 @@ function Anchor() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <MediumOutlined style={styles.footerSocialChild} />
+                  <MediumSquareFilled
+                    style={styles.footerSocialChild}
+                    title="Medium"
+                  />
                 </a>
               </div>
               <div style={styles.footerSocial}>
                 <a
-                  href="https://linkedin.com/in/qudus-animashaun-3561b120b"
+                  href="https://linkedin.com/in/abidemi-animashaun-3561b120b"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <LinkedinFilled style={styles.footerSocialChild} />
+                  <LinkedinFilled
+                    style={styles.footerSocialChild}
+                    title="Linkedin"
+                  />
                 </a>
               </div>
             </div>
