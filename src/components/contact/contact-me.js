@@ -19,7 +19,7 @@ function ContactMe() {
         <div style={styles.card}>
           <h4>
             <a
-              href="https://linkedin.com/in/qudus-animashaun-3561b120b"
+              href="https://linkedin.com/in/abidemi-animashaun-3561b120b"
               target="_blank"
               rel="noopener noreferrer"
             >
