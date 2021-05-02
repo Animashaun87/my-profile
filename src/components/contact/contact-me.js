@@ -36,19 +36,25 @@ function ContactMe() {
 
         <div style={styles.card}>
           <h4>
-            <MailFilled
-              style={{ paddingRight: "5px", fontSize: "28px" }}
-              title="Mail"
-            />
+            <a href="mailto:hello@abidemi.dev">
+              <MailFilled
+                style={{
+                  paddingRight: "5px",
+                  fontSize: "28px",
+                  color: colors.black,
+                }}
+                title="Mail"
+              />
+            </a>
           </h4>
           <span>
             <a
-              href="mailto:animashaunbidemi07@gmail.com"
+              href="mailto:hello@abidemi.dev"
               target="_blank"
               rel="noopener noreferrer"
               style={{ fontWeight: "bold", color: colors.black }}
             >
-              animashaunbidemi07@gmail.com
+              hello@abidemi.dev
             </a>
           </span>
         </div>
