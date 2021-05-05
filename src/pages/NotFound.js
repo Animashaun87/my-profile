@@ -6,10 +6,14 @@ import { Link } from "react-router-dom";
 const NotFound = () => {
   return (
     <>
-      <div style={styles.container}>
-        <h2 style={styles.title}>404</h2>
-        <h3 style={styles.subTitle}>Oops! This is awkward.</h3>
-        <p style={styles.subTitle}>
+      <div style={styles.container} className="page-button-margin">
+        <h2 style={styles.title} className="">
+          404
+        </h2>
+        <h3 style={styles.subTitle} className="text-format">
+          Oops! This is awkward.
+        </h3>
+        <p style={styles.subTitle} className="page-text text-format">
           {" "}
           You're looking for something that doesn't actually exist..
         </p>

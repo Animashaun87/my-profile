@@ -43,6 +43,10 @@
   color: #fff !important;
 }
 
+.text-format {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .about-btn {
   border: none;
   margin-left: 1px;

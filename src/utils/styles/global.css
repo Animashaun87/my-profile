@@ -938,3 +938,19 @@
   }
 }
 /*End skills*/
+
+/* 404 page */
+@media (max-width: 576px) {
+  .page-text {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .page-button-margin {
+    min-height: 340px !important;
+  }
+}
+
+/* End 404 page */
+/* End 404 page */
