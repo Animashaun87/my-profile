@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import "../utils/styles/pages.css";
 import ScrollIndicator from "../utils/scroll-progess";
 import PropTypes from "prop-types";
-import ChangeText from "./animationText";
+import ChangeText from "./shared/animationText";
 
 function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
   const [scrolled, setScrolled] = useState(false);

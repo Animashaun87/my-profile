@@ -28,11 +28,8 @@ function AboutMe({ about }) {
               <p className="about-text about-paragraph">{about}</p>
               <p>
                 {" "}
-                <Link
-                  to="/contact"
-                  className="about-btn about-button sm-left hide-mobile hide-ipad"
-                >
-                  let's connect
+                <Link to="/contact" className=" sm-left hide-mobile hide-ipad">
+                  <button className="about-btn">let's connect</button>
                 </Link>
               </p>
             </div>

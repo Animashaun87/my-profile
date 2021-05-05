@@ -67,6 +67,27 @@
   line-height: 1.6;
 }
 
+.btns {
+  width: 180px;
+  height: 50px;
+  font-size: 1.2rem;
+  background: #ff005c;
+  border: none;
+  margin: 20px;
+  outline: 2px solid #ff005c;
+  outline-offset: 4px;
+  border: 2px solid #ff005c;
+  cursor: pointer;
+  color: white;
+  transition: all 250ms;
+}
+
+.btns:hover {
+  outline-offset: -8px;
+  color: rgb(34, 34, 34);
+  background: none;
+}
+
 .home-bg {
   background-color: #ffefae !important;
   height: auto;

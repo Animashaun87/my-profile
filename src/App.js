@@ -4,7 +4,7 @@ import Frontend from "./layouts/frontend";
 import "antd/dist/antd.css";
 import "./utils/styles/global.css";
 import Loader from "./utils/loader";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/shared/ScrollToTop";
 import "aos/dist/aos.css";
 
 const retry = (fn, retriesLeft = 5, interval = 1000) => {
@@ -35,6 +35,9 @@ const Portfolios = lazy(() => retry(() => PortfoliosPromise));
 const contactPromise = import("./pages/contact");
 const Contact = lazy(() => retry(() => contactPromise));
 
+const notFoundPromise = import("./pages/NotFound");
+const NotFound = lazy(() => retry(() => notFoundPromise));
+
 function App() {
   return (
     <>
@@ -47,6 +50,7 @@ function App() {
                 <Route path="/about" component={About} />
                 <Route path="/portfolio" component={Portfolios} />
                 <Route path="/contact" component={Contact} />
+                <Route path="*" component={NotFound} />
               </Switch>
             </Frontend>
           </ScrollToTop>

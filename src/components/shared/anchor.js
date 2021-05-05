@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "antd";
-import colors from "../utils/colors";
+import colors from "../../utils/colors";
 import {
   GithubFilled,
   LinkedinFilled,

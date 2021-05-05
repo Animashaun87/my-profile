@@ -9,6 +9,18 @@
   box-shadow: 0px 7px 21px 0px rgba(0, 0, 0, 0.12);
 }
 
+.page-btn {
+  border: none;
+  padding: 10px 65px 10px 31px;
+  text-transform: capitalize;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.6s;
+  box-shadow: 0px 7px 21px 0px rgba(0, 0, 0, 0.12);
+}
+
 .white-button {
   padding: 18px 36px;
   background: #ffefae;
@@ -20,18 +32,39 @@
   color: #fff !important;
 }
 
-.about-btn {
-  border: none;
-  padding: 10px 65px 10px 31px;
-  text-transform: capitalize;
-  border-radius: 0;
-  cursor: pointer;
-  font-size: 16px;
-  transition: 0.6s;
-  box-shadow: 0px 7px 21px 0px rgba(0, 0, 0, 0.12);
-}
-.about-button {
+.page-button {
   padding: 18px 36px;
   background: #670000;
   color: #ffefae !important;
+}
+
+.page-button::before {
+  background: #670000;
+  color: #fff !important;
+}
+
+.about-btn {
+  border: none;
+  margin-left: 1px;
+  text-transform: capitalize;
+  border-radius: 0;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: all 250ms;
+  color: #ffefae;
+  outline: 2px solid #670000;
+  outline-offset: -4px;
+  border: 2px solid #670000;
+  background: #670000;
+  width: 220px;
+  height: 50px;
+  /* margin: 20px; */
+}
+
+.about-btn:hover {
+  outline-offset: 4px;
+  color: #670000;
+  background: none;
+  font-weight: bold;
 }
