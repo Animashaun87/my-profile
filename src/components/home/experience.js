@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col, Layout } from "antd";
-import colors from "../utils/colors";
+import colors from "../../utils/colors";
 
 function Experience() {
   return (

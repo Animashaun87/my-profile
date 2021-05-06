@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Layout } from "antd";
-import colors from "../utils/colors";
+import colors from "../../utils/colors";
 import ChangeText from "./animationText";
 
 function PageBanner({ title }) {

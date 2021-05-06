@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/shared/header";
+import Footer from "../components/shared/footer";
 
 const Frontend = (props) => {
   const [path, setPath] = useState("/");

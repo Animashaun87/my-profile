@@ -8,13 +8,13 @@ import {
   ProfileFilled,
   ProjectFilled,
 } from "@ant-design/icons";
-import colors from "../utils/colors";
-import "../utils/styles/button.css";
+import colors from "../../utils/colors";
+import "../../utils/styles/button.css";
 import { Link } from "react-router-dom";
-import "../utils/styles/pages.css";
-import ScrollIndicator from "../utils/scroll-progess";
+import "../../utils/styles/pages.css";
+import ScrollIndicator from "../../utils/scroll-progess";
 import PropTypes from "prop-types";
-import ChangeText from "./shared/animationText";
+import ChangeText from "./animationText";
 
 function Header({ menuOpen, toggleMenu, toggleLogo, path }) {
   const [scrolled, setScrolled] = useState(false);

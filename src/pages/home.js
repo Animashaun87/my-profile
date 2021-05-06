@@ -1,9 +1,9 @@
 import React from "react";
-import Banner from "../components/banner";
+import Banner from "../components/home/banner";
 import AboutMe from "../components/about/about-me";
-import Experience from "../components/experience";
+import Experience from "../components/home/experience";
 import Expertise from "../components/portfolios/expertise";
-import HomePortfolio from "../components/selectPortfolio";
+import HomePortfolio from "../components/home/selectPortfolio";
 import "../utils/styles/pages.css";
 import { ScrollToTop } from "../utils/back-top";
 import useDocumentTitle from "../utils/useDocumentTitle";

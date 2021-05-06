@@ -1,5 +1,5 @@
 import React from "react";
-import PageBanner from "../components/pages-banner";
+import PageBanner from "../components/shared/pages-banner";
 import Expertise from "../components/portfolios/expertise";
 import Portfolio from "../components/portfolios/portfolio";
 import "../utils/styles/pages.css";

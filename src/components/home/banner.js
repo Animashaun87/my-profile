@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Layout } from "antd";
-import colors from "../utils/colors";
-import "../utils/styles/button.css";
+import colors from "../../utils/colors";
+import "../../utils/styles/button.css";
 
 function Banner() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import PageBanner from "../components/pages-banner";
+import PageBanner from "../components/shared/pages-banner";
 import AboutMe from "../components/about/about-me";
 import Skills from "../components/about/skills";
 import Quote from "../components/about/quote";

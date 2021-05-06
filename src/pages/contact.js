@@ -1,6 +1,6 @@
 import React from "react";
 import ContactMe from "../components/contact/contact-me";
-import PageBanner from "../components/pages-banner";
+import PageBanner from "../components/shared/pages-banner";
 import { ScrollToTop } from "../utils/back-top";
 import useDocumentTitle from "../utils/useDocumentTitle";
 
